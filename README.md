@@ -1,8 +1,10 @@
 # Twin Delayed DDPG Model for Virtual AI motion
 
-* ***Reference*** :- Addressing Function approximation Error in Actor-Critic methods, by Scott Fujimoto,
+### Reference :- 
+Addressing Function approximation Error in Actor-Critic methods, by Scott Fujimoto,
 Herke van Hoof, David Meger (2018)  [Paper.](https://arxiv.org/pdf/1802.09477.pdf)
 
+## Introduction 
 TD3 has been a successor of Deep Deterministic Policy Gradient. Until recent times, DDPG
 was the most sought-after algorithm for continuous locomotory agents like Robotics or
 autonomous driving. Question arises as to why this has been replaced on fame grounds with
@@ -26,7 +28,7 @@ This is a three-layered architecture with 6 neural networks which use ReLU
 function as their activation function in the hidden layers and tanh function in their output layer.
 
 
-#### Working of the Actor Critic Model
+## Working of the Actor Critic Model
 * Actor Target 1 is placed in environment and it observes everything and takes actions and
 receives reward based on the quality of action performed.
 * Critic Target 1 judges the action by Actor target and gives the Q-value (Quality of action) to the actions
