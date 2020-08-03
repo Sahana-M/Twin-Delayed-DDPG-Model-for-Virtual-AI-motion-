@@ -11,8 +11,10 @@ has been continuously over estimating the Q values of the critic network. These 
 errors sum up leading to a faulty model leading to the model falling into local optima and
 experience catastrophic forgetting. Our TD3 model focuses on reducing this overestimation
 bias. This is solved in three ways,
- With 2 pair of critic deep neural networks
- With a pair of actor network for the delaying part
- Actor noise regularization part
+* With 2 pair of critic deep neural networks
+* With a pair of actor network for the delaying part
+* Actor noise regularization part
 
 ## Architecture
+![TD3](https://github.com/Sahana-M/Images/blob/master/TD3.png)
+
